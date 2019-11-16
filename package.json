@@ -1,0 +1,20 @@
+{
+  "name": "theshopkeeperchangechallenge",
+  "version": "1.0.0",
+  "description": "The Shopkeeper Change Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebundala/TheShopkeeperChangeChallenge.git"
+  },
+  "author": "ebundala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebundala/TheShopkeeperChangeChallenge/issues"
+  },
+  "homepage": "https://github.com/ebundala/TheShopkeeperChangeChallenge#readme"
+}
