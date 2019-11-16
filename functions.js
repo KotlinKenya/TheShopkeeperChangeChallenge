@@ -39,4 +39,12 @@ function calculate(){
 
 	coinsNote();
 }
+
+var totalAmount = 0;
+
+function checkedItem(itemAmount){
+	var amount = itemAmount;
+	totalAmount  += amount;
+	document.getElementById("bill").value = totalAmount;
+}
   			
