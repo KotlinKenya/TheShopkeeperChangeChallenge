@@ -28,6 +28,8 @@ const main = () => {
         readline.question("Enter your payments :", (pay) => {
             let value = parseInt(pay);
             if (value >= sum) {
+                console.log('Shopkeeper get ', sum );
+                console.log('Your change is :')
                 findCoins(parseInt(value - sum))
             }
     
