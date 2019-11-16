@@ -49,7 +49,14 @@ Soda 65,
     important: Comment you code//
 4. You can fork the repo and submit a PR
 
+### Solution
 
+This solution uses node js
+
+to run excute
+
+`npm start
+`
 
 
 
