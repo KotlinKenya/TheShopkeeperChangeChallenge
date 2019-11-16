@@ -3,6 +3,17 @@ The Shopkeeper Change Challenge
 
 Implement a program that helps a shopkeeper to give change.
 
+The currency denominations:
+1000 Note
+500 Note
+100 Note
+50 Note
+20 coin
+10 coin
+5 coin
+1 coin
+
+
 ### Level 1.
 The program has two inputs
 a.) the amount due as change, that is entered by the shopkeeper.
