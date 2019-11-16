@@ -27,24 +27,26 @@ The OutPut:
 Example:
 IF the customer gives the shopkeeper 352
 
-program should output: 
+The program should output: 
     3 100 Note
     1 50 note
     2 1 coin
 
 ### Level 2.
 
-Imagine a shopping scenario. Integrate:
+⋅⋅⋅Imagine a shopping scenario. Integrate:
 
-1. A person is able to see what is available in the supermarket with various prices and details:
+⋅⋅⋅1. A person is able to see what is available in the supermarket with various prices and details:
 
-Milk 44,
-Honey 162,
-Eggs 357,
-Bread 41,
-Spinach 42,
-Towel 236,
-Soda 65,
+```
+    * Milk 44,
+    * Honey 162,
+    * Eggs 357,
+    * Bread 41,
+    * Spinach 42,
+    * Towel 236,
+    * Soda 65,
+```
 
 2. The customer should be able to shop for the items and get a bill at the end.
 
@@ -54,7 +56,7 @@ Soda 65,
 
 5. The program tells the shopkeeper what values they should be able to give.
 
-### :
+### :Notes
 1. Should run on a terminal. This is a core language question.
 2. Solve in order and submit two results for level 1 and level 2
 3. Use coding best practices:
