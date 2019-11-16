@@ -15,10 +15,22 @@ The currency denominations:
 
 
 ### Level 1.
-The program has two inputs
-a.) the amount due as change, that is entered by the shopkeeper.
-b.) the amount to be issued to the customer in terms currency in denominations in terms of Notes and coins that the customer should receive.
+The program has this input:
 
+- The amount due as change, that is entered by the shopkeeper.
+
+The OutPut:
+
+- the amount to be issued to the customer in terms currency in denominations in terms of Notes and coins that the customer should receive.
+
+
+Example:
+IF the customer gives the shopkeeper 352
+
+program should output: 
+    3 100 Note
+    1 50 note
+    2 1 coin
 
 ### Level 2.
 
