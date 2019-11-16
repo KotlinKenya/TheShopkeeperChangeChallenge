@@ -12,9 +12,10 @@ const main = () => {
 }
 
 const findCoins = (v) => {
-   const deno = [1, 5, 10, 20, 50, 100, 200, 500,  
-        1000, 2000, 5000, 10000] 
-let n = deno.length; 
+   const denominations = [ {v:1,type:'Coin'}, {v:5,type:'Coin'}, {v:10,type:'Coin'},
+    {v:20,type:'Coin'}, {v:50,type:'Coin',type:'Coin'}, {v:100,type:'Coin'}, {v:200,type:'Coin'}, {v:500,type:'Coin'},  
+   {v:1000,type:'Note'}, {v:2000,type:'Note'}, {v:5000,type:'Note'}, {v:10000,type:'Note'}] 
+let n = denominations.length; 
   
 // Initialize Result 
 let ans = [] 
@@ -24,9 +25,9 @@ let i = n - 1
 while(i >= 0){ 
       
     // Find denominations 
-    while (v >= deno[i]) { 
-        v -= deno[i] 
-        ans.push(deno[i]) 
+    while (v >= denominations[i].v) { 
+        v -= denominations[i].v 
+        ans.push(denominations[i]) 
     }
     
    // Prints to stdout with newline.
@@ -34,7 +35,7 @@ while(i >= 0){
 }
 // Print result 
 for (i in ans){
-    console.log(ans[i]) 
+    console.log(ans[i].v,ans[i].type) 
 }
 }
 // entry point
