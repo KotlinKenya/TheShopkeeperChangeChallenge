@@ -23,7 +23,10 @@ def findMin(V):
 
     # Print result
     for i in range(len(ans)):
-        print(ans[i], end=" ")
+        if ans[i] == 1000 or ans[i] ==  2000 or ans[i] == 5000 or ans[i] == 10000:
+            print(str(ans[i])+ " Note \t", end=" ")
+        else:
+            print(str(ans[i])+" Coin \t", end=" ")
 
 
 
@@ -32,5 +35,10 @@ if __name__ == '__main__':
     n = 130
     print("Change is ",
           "of change for", n, ": ", end="")
+
+
+
+
     findMin(n)
+
 
