@@ -15,8 +15,10 @@ const main = () => {
     console.log('Available products\n');
     console.table(products);
     let sum = 0;
+    // read chosen products
     readline.question('Enter products id separated by comma(,):', (ids) => {
         productsIds = ids.split(',').map((id) => parseInt(id));
+        // calculate the sum of products
         sum = productsIds.reduce((prev, next) => {
             if (products.length > (next)) {
                 return prev + products[next].price
@@ -24,7 +26,7 @@ const main = () => {
             return prev
         })
         console.log("Your bill sum is ", sum);
-        //readline.close()
+        // read payments value
         readline.question("Enter your payments :", (pay) => {
             let value = parseInt(pay);
             if (value >= sum) {
@@ -43,8 +45,8 @@ const main = () => {
 
 const findCoins = (v) => {
     const denominations = [{ v: 1, type: 'Coin' }, { v: 5, type: 'Coin' }, { v: 10, type: 'Coin' },
-    { v: 20, type: 'Coin' }, { v: 50, type: 'Coin', type: 'Coin' }, { v: 100, type: 'Note' }, { v: 200, type: 'Note' }, { v: 500, type: 'Note' },
-    { v: 1000, type: 'Note' }, { v: 2000, type: 'Note' }, { v: 5000, type: 'Note' }, { v: 10000, type: 'Note' }]
+    { v: 20, type: 'Coin' }, { v: 50, type: 'Coin', type: 'Coin' }, { v: 100, type: 'Note' },  { v: 500, type: 'Note' },
+    { v: 1000, type: 'Note' }]
     let n = denominations.length;
 
     // Initialize Result 
