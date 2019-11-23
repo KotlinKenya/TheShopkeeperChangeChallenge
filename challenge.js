@@ -12,15 +12,7 @@ const readercustom = readline.createInterface({
 });
 
 //create notes and coin variables
-let note_1000 = 0;
-let note_500 = 0;
-let note_200 = 0;
-let note_100 = 0;
-let note_50 = 0;
-let note_20 = 0;
-let note_10 = 0;
-let note_5 = 0 ;
-let note_1 = 0;
+let note_1000,note_500,note_200,note_100,note_50,note_20,note_10,note_5 ,note_1 = 0;
 
 //The sort method for the sorting
 let sort = (change) =>{
