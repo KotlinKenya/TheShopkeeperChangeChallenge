@@ -101,9 +101,18 @@ let sort = (change) =>{
 
 // call the readercustom interface to handle the input and pass the
 // value received to our sort function
+let getInput = () =>{
 readercustom.question('What do you want to sort? ',(answer)=>{
+    if(isNaN(parseInt(answer))){
+        console.log("The amount you entered is not valid. Please try again");
+        getInput();
+    }
+    else{
     sort(answer);
     readercustom.close();
+    }
 });
+}
 
+getInput();
 //Tada! Hope I win.... Fingers crossed

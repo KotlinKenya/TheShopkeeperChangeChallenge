@@ -155,7 +155,7 @@ let pay = ()=>{
         console.log("The amount is not sufficient.. Please try again");
         pay();
         }
-    else if(parseInt(answer)!=NaN){
+    else if(isNaN(parseInt(answer))){
         console.log("The amount you entered is not valid. Please try again");
         pay();
     }
