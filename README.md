@@ -64,7 +64,13 @@ The program should output:
 4. You can fork the repo and submit a PR
 
 
+## Running python solution:
+ Steps:
+ Note: Python3 is required
 
-
+ 1. Clone the project `git clone https://github.com/KotlinKenya/TheShopkeeperChangeChallenge.git`
+ 2. Navigate to the project `cd TheShopkeeperChangeChallenge`
+ 3. Run either level solution `python3 chal1.py` or `python3 chal2.py`
+ 4. Enjoy!
 
 
