@@ -23,7 +23,7 @@ class Shopkeeper():
         except Exception as error:
                 logging.error(f"{error}")
     
-    def level_2(self,shopping_cart:dict):
+    def level_2(self):
         """
         >>> Shopkeeper().level_2({"Milk":2,"Honey":1})
         Your Total bill is 250
@@ -34,14 +34,27 @@ class Shopkeeper():
         1 5 coin
 
         """
+        print("S/N  Product  Price\n1.   Milk       44\n2.   Honey      162\n3.   Eggs       357\n4.   Bread      41\n5.   Spinach    42\n6.   Towel      236\n7.   Soda       65\n")
         # A dictionary of product(key) and price (value) found in the shop
-        product_and_price:dict = {"Milk":44,"Honey":162,"Eggs":357,"Sread":41, "Spinach": 42,"Towel":236,"Soda":65}
+        product_and_price:dict = {"Milk":44,"Honey":162,"Eggs":357,"Bread":41,"Spinach": 42,"Towel":236,"Soda":65}
+        index_product={1:"Milk",2:"Honey",3:"Eggs",4:"Bread", 5:"Spinach",6:"Towel",7:"Soda"}
         total_cost:int = 0 #total cost of what the customer shops
+        shopping_cart={}
+
+        while True:
+            try:
+                index=int(input("Select product S/N: "))
+                quantity= int(input("Enter quantity: "))
+                shopping_cart[index_product[index]]=quantity
+            except ValueError:
+                break
+    
         """
         Moving through customer cart to get items and quantity. 
         Then getting total cost per each item. adding up all costs to obtain accumulated cost stored as total_cost
         """
         try:
+            pass
             for item in shopping_cart.keys():
                 total_cost+=product_and_price[item]*shopping_cart[item]
             
@@ -58,6 +71,6 @@ class Shopkeeper():
             logging.error(f"{error}")
         
 
-# shop=Shopkeeper()
+shop=Shopkeeper()
 # shop.level_1(653)
-# shop.level_2({"Milk":2,"Honey":5})
+shop.level_2()
